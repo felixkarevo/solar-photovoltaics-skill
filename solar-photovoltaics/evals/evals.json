@@ -1,0 +1,23 @@
+{
+  "skill_name": "solar-photovoltaics",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ich möchte mein Wohnmobil mit Solar ausstatten. Ich habe einen Kühlschrank (60 W, läuft den ganzen Tag), LED-Beleuchtung, eine Wasserpumpe und gelegentlich Laptop und Fernseher über einen Wechselrichter. Welche Komponenten brauche ich, und wie groß sollen Panel und Batterie sein? Ich fahre hauptsächlich im Sommer in Südeuropa.",
+      "expected_output": "Off-grid van design: energy audit table (~1-2 kWh/day), 12/24V voltage choice with reasoning, LFP battery sizing (≈2-3 kWh), PV array sizing (~400-500 Wp) with peak-sun-hours math, MPPT charge controller, DC-DC charger mention, pure sine inverter sizing, fusing/wiring safety notes. No need for grid-tie content.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We have a 4-person detached house in southern Germany, south-facing roof ~30 m² usable, no shading. Current electricity use is 4500 kWh/year. Should we get a battery? What system size makes sense, roughly what will it cost, and what do we need to register?",
+      "expected_output": "Grid-tie design: ~9-10 kWp from 30 m² (10 m²/kWp), yield estimate ~9500-10000 kWh/a, self-consumption discussion, battery recommendation (4-5 kWh, 1-1.5 kWh/kWp rule), cost ballparks (lower five figures), German registration steps (grid operator, Marktstammdatenregister 1-month deadline, tax office), feed-in tariff context.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to power my sailboat independently. I have a 12V fridge, chartplotter, autopilot, lights and water pump, and I want to run a small microwave through an inverter. What do I need to know about wiring this safely, and will solar alone be enough in winter?",
+      "expected_output": "Boat off-grid design: audit ≈1.5-2 kWh/day, 12V or 24V discussion, battery ~4 kWh LFP, ~500-700 Wp split across multiple panels/MPPTs due to dynamic shading, inverter surge sizing for microwave, marine wiring rules (tinned wire, fusing at battery, RCD/shore power, galvanic isolation), honest winter statement (1 PSH/day → need shore/genset backup).",
+      "files": []
+    }
+  ]
+}

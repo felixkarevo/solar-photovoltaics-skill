@@ -1,0 +1,6 @@
+# Source literature (copyrighted, extracted for skill authoring only)
+sources/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
